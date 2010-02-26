@@ -6,7 +6,7 @@ Stupid little DSL that prints human readable logic text from human readable ruby
  puts this.is('blue').and {that.is('blue').or that.is('green')}.and this.is('yellow')
  this is blue and (that is blue or that is green) and this is yellow
 
-= Why would you use it
+== Why would you use it
 You wouldn't.  At least not in its current form.  But you could do something like make Command reference a hash and make "is" and "is_not" do logic tests.  Of course you would need to add "and" and "or" to either Object or TrueClass/FalseClass, but it would let you do this (if you cared).
 
  if this.is('blue').and that.is('yellow')
